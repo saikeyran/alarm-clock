@@ -1,0 +1,120 @@
+/* body css */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: #021c28;
+}
+
+.main_container {
+  width: 350px;
+  /* height: 400px; */
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgb(55 54 59 / 60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ac1111;
+}
+
+img {
+  max-width: 150px;
+}
+
+#current_time {
+  margin: 5px;
+  background: black;
+  border: 1px solid black;
+  color: white;
+  min-width: 200px;
+  text-align: center;
+  box-shadow: 0 0 40px rgb(55 54 59 / 60%);
+  border-radius: 10px;
+  padding: 10px 25px;
+  border: 1px solid #5d5d5d;
+}
+
+#main_content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+/* set alarm button css */
+button {
+  padding: 5px 5px;
+  border-radius: 10px;
+  color: white;
+  background-color: #33e933;
+  font-weight: 700;
+  margin-top: 8px;
+  width: 100%;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* stop alarm button */
+#stop_alarm {
+  background-color: #f44336;
+}
+
+#alarm_button {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#alarmList {
+  margin-top: 10px;
+}
+
+/* alarmlist css */
+#alarmList li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#alarmList li span {
+  /* padding-top: 6px; */
+  padding-left: 5px;
+}
+
+.timeInputForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputcontainer {
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inputcontainer select {
+  padding: 10px 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-button {
+  width: 50%;
+  background-color: #f44336;
+  margin-top: 0px;
+}

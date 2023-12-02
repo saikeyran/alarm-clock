@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm Clock</title>
+    <!-- css-file -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="main">
+    <!-- Main container of html document -->
+    <div class="main_container">
+      <h1 style="color:white">Alarm Clock</h1>
+      <h1 id="current_time"></h1>
+      <div id="main_content">
+        <!-- use form take input for alarm clock -->
+        <form class="timeInputForm">
+          <div class="inputcontainer">
+            <select name="hours" id="hours" required></select>
+            <select required name="minutes" id="minutes"></select>
+            <select required name="seconds" id="seconds"></select>
+            <select name="am-pm" id="am-pm" required>
+              <option selected value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+          </div>
+          <!-- Alarm button -->
+          <button id="set_alarm" type="submit">Set Alarm</button>
+          <button id="stop_alarm">Reset</button>
+        </form>
+        <!-- alarmlist the numer of alarms set -->
+        <div id="alarmList"></div>
+      </div>
+    </div>
+    <!-- use to play alrm ringtone  -->
+    <audio id="alarm_sound" src="./assets/ringtone.mp3" loop></audio>
+    <!-- Javascript-File -->
+    <script src="./script.js"></script>
+  </body>
+</html>
